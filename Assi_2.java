@@ -30,13 +30,7 @@ public class Assi_2 {
                 break;
             }
             System.out.println("Contains all alphabets");
-        }
-
-
-    }
-
+        }}
     public static void main(String[] args) {
         alphabets();
-    }
-
-}
+    }}
