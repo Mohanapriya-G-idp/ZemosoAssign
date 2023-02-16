@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="user" value="priyagopalakrishnann15@gmail.com"></parameter>
+    <parameter name="pass" value="mohanapriya257"></parameter>
+    <parameter name="name" value="zemoso"></parameter>
+    <parameter name="mob" value="9000000000"></parameter>
+    <parameter name="pin" value="600001"></parameter>
+    <parameter name="addr" value="10,abc street"></parameter>
+    <parameter name="area" value="kelambakkam"></parameter>
+    <parameter name="land" value="near water tank"></parameter>
+    <parameter name="city" value="chennai"></parameter>
+    <test verbose="2" preserve-order="true" name="/home/mohag/IdeaProjects/AmazonWithLogin/.idea">
+        <classes>
+            <class name="TestScenario.SignInPageTest"></class>
+            <class name="TestScenario.HomePageTest"></class>
+            <class name="TestScenario.HomePageTest"></class>
+            <class name="TestScenario.OrderPageTest"></class>
+            <class name="TestScenario.PaymentPageTest"></class>
+            <class name="TestScenario.AddressPageTest"></class>
+        </classes>
+
+
+    </test>
+</suite>

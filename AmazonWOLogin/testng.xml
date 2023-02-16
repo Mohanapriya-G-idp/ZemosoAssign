@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/home/mohag/IdeaProjects/AmazonWOLogin/.idea">
+        <classes>
+            <class name="TestScenarios.HomePageTest"/>
+            <class name="TestScenarios.DealsPageTest"/>
+            <class name="TestScenarios.ThirdDealPageTest"/>
+            <class name="TestScenarios.CartPageTest"/>
+            <class name="TestScenarios.ToAddPageTest"/>
+            <class name="TestScenarios.NavigationPageTest"/>
+            <class name="TestScenarios.MobilePageTest"/>
+        </classes>
+    </test>
+</suite>
