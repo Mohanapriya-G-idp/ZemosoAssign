@@ -17,7 +17,7 @@ public class SignInPage extends BaseLogin {
     WebElement signIn;
     @FindBy(xpath = "//div[@id='nav-flyout-ya-signin']//span[@class='nav-action-inner']")
     WebElement signBtn;
-    @FindBy(id = "ap_email")
+    @FindBy(xpath = "//input[@id='ap_email']")
     public static WebElement mailID;
     @FindBy(id = "continue")
     public static WebElement cont;

@@ -35,6 +35,7 @@ public void browser() {
     driver.manage ().timeouts ().implicitlyWait ( Duration.ofSeconds ( 10 ) );
     driver.manage ().timeouts ().pageLoadTimeout ( Duration.ofSeconds ( 30 ) );
     driver.get ( prop.getProperty ( "url" ) );
+    driver.manage ().deleteAllCookies ();
 }
 
 

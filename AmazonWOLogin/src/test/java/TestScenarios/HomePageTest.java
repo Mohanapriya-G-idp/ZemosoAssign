@@ -3,9 +3,7 @@ package TestScenarios;
 import BaseFile.Base;
 import PageObejects.HomePage;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class HomePageTest extends Base {
     HomePage homePage;
@@ -13,7 +11,7 @@ public class HomePageTest extends Base {
     public HomePageTest() {
         super();
     }
-    @BeforeMethod
+    @BeforeSuite
 public void clickHome(){
         launch ();
         homePage= new HomePage ();
@@ -26,9 +24,10 @@ public void clickHome(){
 homePage.dealsClick ();
     }
 
-        @AfterMethod
-                public void tearDown(){
-            //driver.quit ();
+    @AfterSuite
+    public void tearDown(){
+        driver.manage ().deleteAllCookies ();
+        driver.quit ();
         };
 
 }

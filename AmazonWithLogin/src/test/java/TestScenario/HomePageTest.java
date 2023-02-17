@@ -21,9 +21,10 @@ public class HomePageTest extends BaseLogin {
         String titl = homePage.validateHomePage ();
         Assert.assertEquals ( titl, "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in" );
     }
+
     @Test(priority = 2)
-public void orderValidate(){
-    homePage.OrderPage ();
-}
-    //driver.quit():
+    public void orderValidate() {
+        homePage.OrderPage ();
+    }
+
 }

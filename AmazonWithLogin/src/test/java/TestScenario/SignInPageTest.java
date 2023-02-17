@@ -14,29 +14,29 @@ public class SignInPageTest extends BaseLogin {
         super ();
     }
 
-    @BeforeMethod
+    @BeforeSuite
     public void clickSignIn() {
         launch ();
         browser ();
     }
 
-    @Test
+    @Test(priority = -1)
     public void signIn() {
         signInPage = new SignInPage ();
         signInPage.signIn ();
     }
 
-    @Parameters({"user,pass"})
+    //@Parameters({"user","pass"})
     @Test
-    public void signinDetails(String user, String password) {
-        mailID.sendKeys ( user );
-        //mailID.sendKeys ( prop.getProperty ( "user" ) );
+    public void signinDetails() {
+       // mailID.sendKeys ( user );
+        mailID.sendKeys ( prop.getProperty ("userName"));
         cont.click ();
-        //  String pass =  prop.getProperty ("pass") ;
-        pwd.sendKeys ( password );
+        String pass =  prop.getProperty ("pwd") ;
+        pwd.sendKeys ( pass );
         signInTab.click ();
     }
-    @AfterTest
+    @AfterSuite
     public void tearDown(){
         driver.manage ().deleteAllCookies ();
         driver.quit ();

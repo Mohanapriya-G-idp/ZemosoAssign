@@ -8,6 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BaseLogin {
+    @Override
+    public void launch() {
+        super.launch ();
+    }
+
     public HomePage() {
         PageFactory.initElements ( driver,this );
     }
