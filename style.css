@@ -1,0 +1,99 @@
+body{
+
+    background-color: gray;
+    text-align: left;
+    
+}
+.box{
+    background-color:white;
+    top:50%;
+    
+    position:absolute;
+    transform:translate(-10%,-50%);
+    box-sizing:border-box;
+    padding: 100% 20%;
+    text-align:left;
+    
+}
+.logo{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left:29%;
+}
+input{
+    width: 85%;
+    padding: 10px;
+     
+    
+}
+ log{
+    padding: 20px;
+    display: block;
+ }
+ label{
+    color: grey;
+ }
+  input[type="button"]{
+    background-color: white;
+    padding: 10px; 
+  }
+  input[type="button"]:hover{
+    cursor: pointer;
+    background:whitesmoke;
+  }
+  input[type="submit"]{
+    background-color: blue;
+    color: white;
+    font-style: bold;
+    width: 90%;
+    font-size: large;
+    border: none;
+
+  }
+  input[type="submit"]:hover{
+    cursor: pointer;
+    background: #0097a7;
+  }
+  
+  h2{
+    text-align:left;
+    margin: auto;
+}
+h1{
+    text-align: left;
+    margin: auto;
+}
+h4{
+    text-align:left;
+    line-height: 1.6em;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    display: block;
+   
+    
+}
+h5{
+    text-align-last:left;
+    margin: auto;
+}
+#rem{
+    
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+.checkbox{
+    display: flex;
+   
+    align-items:flex-start;
+    
+    width:30%;
+
+}
+.signIn{
+    justify-content: center;
+}
+
+
