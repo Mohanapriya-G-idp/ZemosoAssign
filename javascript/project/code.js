@@ -47,8 +47,16 @@ function returnRandomNum(){
 function numberBetween(){
     let start=document.getElementById("rand1").value
     let end=document.getElementById("rand2").value
+    
+    if(Number(start)<Number(end)){
+       
     let number=ranGenerator(start,end)
     document.getElementById("p2").innerHTML=number
+    }else{
+        
+        document.getElementById("p2").innerHTML="end value is lesser than start value"
+    }
+    
 }
 //Returns a long Lorem Ipsum String
 var str=document.getElementById("btn");
@@ -62,11 +70,16 @@ function sentence(){
     let noOfSentence=lorem.split(".")
     let loremSentence=document.getElementById("sentences").value
     let stringCount=""
+    if( Number.isInteger(Number(loremSentence))){
     for(let i=0;i<loremSentence;i++){
         stringCount=stringCount+noOfSentence[i]
-    }
- document.getElementById("p4").innerHTML=stringCount
-}
+            }     
+   document.getElementById("p4").innerHTML=stringCount
+
+    }else{
+        document.getElementById("p4").innerHTML="error value entered"  
+    }}
+ 
 //Returns a Lorem Ipsum String based on the number of characters
 function charCount(){
     let noOfChar=lorem.split("")
@@ -79,9 +92,9 @@ function charCount(){
 }
 //Returns the current date
 document.getElementById("btn2").addEventListener("click",myDate)
-let newDate= new Date()
+
 function myDate(){
-   
+    let newDate= new Date()
     let year=newDate.getFullYear()
 let mont=newDate.getMonth()+1
 let day=newDate.getDate()
@@ -98,8 +111,9 @@ document.getElementById("p6").innerHTML= newFormat
 document.getElementById("btn3").addEventListener("click",myTime)
 
 function myTime(){
-    let hour=newDate.getHours()
-    let min=newDate.getMinutes()
+    let newTim= new Date()
+    let hour=newTim.getHours()
+    let min=newTim.getMinutes()
     let apm
     if(hour>=12){
         hour=hour-12
@@ -150,7 +164,7 @@ function randomPass(){
     let chars=["a","b","c","d","e","f","g","h","i","j","k","l","0","9","8","7","6","5","%","$","#","@","&"]
 let pass=""
 for (let i = 0; i < 10; i++) {
-    const element = ranGenerator(0,chars.length)
+    const element = ranGenerator(0,chars.length-1)
     pass=pass+chars[element]
     
 }
