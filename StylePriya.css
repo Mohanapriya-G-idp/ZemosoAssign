@@ -1,0 +1,52 @@
+h1{
+    color:rgb(77, 241, 121);
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    margin: 50px;
+    display: inline;
+}
+.tech{
+    color: yellow;
+}
+#r{
+    color: rgb(49, 244, 244);
+}
+*{
+    background-color: black;
+    color: rgb(236, 160, 250);
+    padding-top:2px;
+}
+h2{
+    color: rgb(242, 66, 116);
+}
+.w{
+    color: rgb(195, 255, 43);
+}
+p{
+    margin: 20px;
+    padding-top: 20px;
+}
+nav{
+    display: inline;
+    padding: 5px;
+    background-color: white;
+}
+li:hover{
+    color: white;
+    cursor: pointer;
+
+}
+.v:hover{
+    color: whitesmoke;
+    cursor: pointer;
+}
+.header{
+    background-image: url("download.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tab{
+    margin:20px;
+    padding-top:10px;
+}
