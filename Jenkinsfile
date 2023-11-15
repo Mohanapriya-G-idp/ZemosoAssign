@@ -2,23 +2,15 @@ pipeline {
     agent any
     
     stages {
-        stage('Build') {
+         stage('Build') {
             steps {
-                // Perform the build actions here
-                sh 'make -f Makefile.build'
+                sh 'javac Assi1.java' // Compile the Java file
             }
         }
         stage('Test') {
             steps {
-                // Execute tests
-                sh 'make -f Makefile.test'
+                sh 'java Assi1' // Run the compiled Java file
             }
-        }
-        stage('Deploy') {
-            steps {
-                // Deployment steps
-                sh 'make -f Makefile.deploy'
-            }
-        }
     }
+}
 }
