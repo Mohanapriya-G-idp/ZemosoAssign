@@ -1,4 +1,3 @@
-package JavaAssignments;
 
 public class Assi1 {
     public static void muliples() {
